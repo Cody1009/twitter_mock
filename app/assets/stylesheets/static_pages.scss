@@ -1,3 +1,41 @@
-// Place all the styles related to the Static_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.static_pages{
+  background-color: white;
+}
+.container{
+  width:500px;
+  margin: 0 auto;
+
+}
+
+//#eyecatch{
+//  background: url("eyecatch.jpeg") no-repeat;
+//  //画像を要素全体に表示
+//  background-size: cover;
+//  //収縮の基点を左上から中心に
+//  background-position: 50% 20%;
+//  height: 1000px;
+//}
+header{
+  background:tomato;
+}
+main{
+  background-color: green;
+  #left{
+    background: limegreen;
+    float: left;
+    width:200px;
+  }
+
+  #right{
+    background: lightblue;
+    float: left;
+    width:200px;
+  }
+}
+
+
+
+footer{
+  clear: both;
+  background-color: blue;
+}
