@@ -1,59 +1,107 @@
-
-
-
+<!--header-->
 
 <header>
   <div class="container">
-    <ul id="menu">
-      <li><a href="#">Menu1</a></li>
-      <li><a href="#">Menu2</a></li>
-      <li><a href="#">Menu3</a></li>
-    </ul>
+    <p>
+      ドットインストールを見ながら<br>
+      コーディングができるアトムパッケージ
+    </p>
+    <h1>
+      Dotinstall Pane
+    </h1>
+    <a href="#" class="btn">
+      <%= fa_icon 'external-link', text: '詳細を見る', right: true %>
+    </a>
+    <%= image_tag("top.png",
+                  size: "480x270",
+                  alt: "Atom editor",
+                  class: "shadow")
+    %>
   </div>
-
 </header>
 
-<!--<div id="eyecatch">-->
-<!--this is eyecatch test-->
-<!--</div>-->
+<!--sections-->
 
-<main>
+<!--features-->
+<section class="features">
+  <h2>Dotinstall Paneの特徴</h2>
   <div class="container">
-    <ul id="lessons">
-      <li>
-        <div class="lesson_img">
-          <img src="assets/html.png" width="50" height="50">
-        </div>
-        <div class="lesson_info">
-          <h2>HTML入門</h2>
-          <p>Intro to HTML. Intro to HTML. Intro to HTML. Intro to HTML. Intro to HTML. Intro to HTML. </p>
-        </div>
-      </li>
-      <li>
-        <div class="lesson_img">
-          <img src="assets/html.png" width="50" height="50">
-        </div>
-        <div class="lesson_info">
-          <h2>HTML入門</h2>
-          <p>Intro to HTML. Intro to HTML. Intro to HTML. Intro to HTML. Intro to HTML. Intro to HTML. </p>
-        </div>
-      </li>
-      <li>
-        <div class="lesson_img">
-          <img src="assets/html.png" width="50" height="50">
-        </div>
-        <div class="lesson_info">
-          <h2>HTML入門</h2>
-          <p>Intro to HTML. Intro to HTML. Intro to HTML. Intro to HTML. Intro to HTML. Intro to HTML. </p>
-        </div>
-      </li>
-    </ul>
+    <div class="row">
+      <%= image_tag("feature1.png",
+                    size: "420x270",
+                    alt: "dotinstallpane",
+                    class: "shadow") %>
+      <div class="desc pull-right">
+        <h3>すごい特徴があるよ！</h3>
+        <p>すごいよ。すごいよ。すごいよ。すごいよ。すごいよ。すごいよ。すごいよ。</p>
+      </div>
+    </div>
+    <div class="row">
+      <%= image_tag("feature1.png",
+                    size: "420x270",
+                    alt: "dotinstallpane",
+                    class: "shadow") %>
+      <div class="desc pull-left">
+        <h3>すごい特徴があるよ！</h3>
+        <p>すごいよ。すごいよ。すごいよ。すごいよ。すごいよ。すごいよ。すごいよ。</p>
+      </div>
+    </div>
+    <div class="row">
+      <%= image_tag("feature1.png",
+                    size: "420x270",
+                    alt: "dotinstallpane",
+                    class: "shadow") %>
+      <div class="desc pull-right">
+        <h3>すごい特徴があるよ！</h3>
+        <p>すごいよ。すごいよ。すごいよ。すごいよ。すごいよ。すごいよ。すごいよ。</p>
+      </div>
+    </div>
   </div>
-</main>
+</section>
 
+<section class="voices">
+  <h2>利用者の声</h2>
+  <div class="container">
+    <div class="user">
+      <%= image_tag("icon1.jpg",
+                    size: "100x100",
+                    alt: "利用者A",) %>
+      <h3>利用者A</h3>
+      <P>すごいよ!すごいよすごいよすごいよすごいよ
+        すごいよすごいよすごいよすごいよ</P>
+    </div>
+
+    <div class="user">
+      <%= image_tag("icon2.jpg",
+                    size: "100x100",
+                    alt: "利用者A",) %>
+      <h3>利用者B</h3>
+      <P>すごいよ!すごいよすごいよすごいよすごいよ
+        すごいよすごいよすごいよすごいよ</P>
+    </div>
+
+    <div class="user">
+      <%= image_tag("icon3.jpg",
+                    size: "100x100",
+                    alt: "利用者A",) %>
+      <h3>利用者C</h3>
+      <P>すごいよ!すごいよすごいよすごいよすごいよ
+        すごいよすごいよすごいよすごいよ</P>
+    </div>
+  </div>
+
+
+</section>
+
+<section class="call-to-action">
+  <h2>Dotinstall Paneを使おう</h2>
+  <div class="container">
+    <a href="#" class="btn">
+      <%= fa_icon 'external-link', text: '詳細を見る', right: true %>
+    </a>
+  </div>
+</section>
 
 <footer>
-  <div class="container">
-    this is footer
-  </div>
+  <p>dotinstall.com</p>
 </footer>

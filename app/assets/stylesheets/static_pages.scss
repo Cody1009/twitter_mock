@@ -1,92 +1,190 @@
-.static_pages {
+@charset "utf-8";
 
-  background-color: white;
-}
+/* common */
 
-.container {
-  width: 500px;
-  margin: 0 auto;
-
-}
-
-//#eyecatch{
-//  background: url("eyecatch.jpeg") no-repeat;
-//  //画像を要素全体に表示
-//  background-size: cover;
-//  //収縮の基点を左上から中心に
-//  background-position: 50% 20%;
-//  height: 1000px;
-//}
-header {
-  background: tomato;
-
-  #menu {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    font-size: 0;
-    li {
-      display: inline-block;
-
-      a {
-        display: inline-block;
-        width: 80px;
-        height: 40px;
-        background: darkorange;
-        font-size: 16px;
-        text-decoration: none;
-        text-align: center;
-        line-height: 40px;
-        &:hover {
-          background: white;
-          transition: 1.5s;
-        }
-
-      }
-    }
-
-  }
-}
-
-main {
-  background: skyblue;
-  padding: 15px 0;
-}
-
-ul#lessons {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-ul#lessons h2, ul#lessons p {
-  margin: 0;
-  padding: 0;
+body {
   font-size: 14px;
+  font-family: Verdana, sans-serif;
+  color: #333;
 }
 
-ul#lessons .lesson_img {
-  float: left;
-  width: 50px;
+a {
+  text-decoration: none;
 }
 
-ul#lessons .lesson_info {
-  float: right;
-  width: 440px;
+p {
+  line-height: 2;
 }
 
-ul#lessons li {
+.btn {
+  display: inline-block;
+  width: 290px;
+  line-height: 45px;
+  background: #fff;
+  text-align: center;
+  color: #f39800;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+img.shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+section {
+  padding: 90px 0;
+}
+
+section:nth-child(odd) {
+  background: #f8f8f8;
+}
+
+section .container {
+  width: 820px;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 26px;
+  text-align: center;
+  margin: 0 0 90px;
+  font-weight: normal;
+}
+
+section:not(.call-to-action) h2:after {
+  /*content: '- title -';*/
+  display: block;
+  font-size: 18px;
+  color: #aaa;
+  padding-top: 10px;
+}
+
+/* header */
+
+header {
+  background: url('bg.png');
+  background-size: cover;
+}
+
+header .container {
+  width: 820px;
+  margin: 0 auto;
+  height: 320px;
+  padding-top: 10px;
+  position: relative;
   overflow: hidden;
 }
 
-ul#lessons li:not(:last-child) {
-  padding-bottom: 10px;
-  margin-bottom: 15px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+header h1, header p {
+  color: #fff;
+}
+
+header p {
+  padding-top: 50px;
+}
+
+header h1 {
+  font-size: 34px;
+  margin-bottom: 50px;
+}
+
+header img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* ################    features ####################*/
+
+.features h2:after {
+  content: '- Features -';
+}
+
+.desc {
+  width: 360px;
+}
+
+.pull-right {
+  float: right;
+  padding-left: 40px;
+}
+
+.pull-left {
+  float: left;
+  padding-right: 40px;
+}
+
+.row {
+  overflow: hidden;
+  margin-bottom: 90px;
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+
+.features h3 {
+  font-size: 24px;
+}
+
+/* ################### voices ############### */
+
+.voices h2:after {
+  content: '- User Voices -';
+}
+
+.voices{
+  .container{
+    display: flex;
+    justify-content: space-between;
+  }
+  h2{
+    margin-bottom: 150px;
+  }
+}
+.user{
+  background: #fff;
+  width: 250px;
+  // マージンなどの計算しなくていい。すべて含んだ値がwidth250になる
+  box-sizing: border-box;
+  padding:65px 40px 26px;
+  position: relative;
+
+  h3{
+    text-align: center;
+  }
+  img{
+    border-radius: 50%;
+    border: 10px solid  white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -60px;
+    margin:0 auto;
+  }
 }
 
 
-footer {
-  clear: both;
-  background-color: blue;
+/* ################### call to actions ############### */
+
+.call-to-action{
+  background: url('bg.png');
+  background-size: cover;
+  text-align: center;
+  h2{
+    color: #fff;
+    margin-bottom: 50px;
+  }
+}
+
+/* ################### footer ############### */
+
+footer{
+  padding:90px 0;
+  text-align: center;
+  color: #CCCCCC;
 }
