@@ -1,3 +1,50 @@
-// Place all the styles related to the Responsive_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$black-text: #333;
+$gray-background: #aaa;
+
+
+.responsive_pages{
+  font-size: 14px;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: #f8f8f8;
+
+  header {
+    background: white;
+    h1 p {
+      color: $black-text !important;
+    }
+    .container{
+      width: 90%;
+      margin:0 auto;
+    }
+  }
+}
+
+p{
+  line-height: 2;
+}
+
+/* header */
+
+.header-mobile-menu{
+
+}
+
+
+
+@media (min-width: 570px) {
+    .responsive_pages{
+      background: skyblue;
+    }
+}
+
+/* large */
+
+@media (min-width:820px ) {
+  .responsive_pages{
+    background: lime;
+  }
+
+}
